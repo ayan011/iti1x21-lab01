@@ -9,7 +9,11 @@ public class Q3_AverageDemo {
   //method that calculates the average of the numbers in an array
   public static double calculateAverage(double[] values){
     double result;
-    //your code here
+    result = 0;
+		for(int i = 0; i < values.length; i++){
+			result = result + values[i]; 
+			result = result / values.length;
+		}
     return result;
   }
 }
